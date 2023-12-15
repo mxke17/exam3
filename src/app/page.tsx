@@ -57,10 +57,7 @@ function HomePage() {
 
       <section style={styles.featuredContent}>
         <h2 style={styles.title}>Encuentra tus eventos introduciento tu codigo postal</h2>
-            <ImageForm></ImageForm>
-
-            <p>Aqui tienes la dirección:</p>
-
+        
             <div style={{height: "500px"}}>
                 <LazyMap center={[longitud, latitud]} zoom={15}>
                     <LazyMarker position={[longitud, latitud]}></LazyMarker>
