@@ -1,13 +1,13 @@
 "use server";
 
-import { NewAuctionJSON } from "./auctions";
+//import { NewAuctionJSON } from "./auctions";
 import { Post, PostFormData } from "./fetch";
 
 const PATH = "events";
 
-export async function CreateNewEvent(event: NewAuctionJSON) {
-    return await Post(PATH, event);
-}
+//export async function CreateNewEvent(event: NewAuctionJSON) {
+    //return await Post(PATH, event);
+//}
 
 
 export async function NewEventFromForm(formData: FormData, user: string) {
@@ -30,11 +30,11 @@ export async function NewEventFromForm(formData: FormData, user: string) {
     const imageResponseJson = await imageResponse.json();
     const url = imageResponseJson.imageUrl;
 
-    const newEvent = await CreateNewEvent({
-        nombre: nombre as string,
-        "timestamp": new Date(timestamp as string),
-        Foto: url,
-    });
+    //const newEvent = await CreateNewEvent({
+        //nombre: nombre as string,
+        //"timestamp": new Date(timestamp as string),
+        //Foto: url,
+    //});
 
-    return await newEvent.json();
+    //return await newEvent.json();
 }
