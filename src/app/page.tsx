@@ -27,11 +27,9 @@ function HomePage() {
     },
   };
 
-  //const session = await getServerSession();
-
     // const urlBase = process.env.NEXTAUTH_URL;
 
-    // const directionResponse = await fetch(`${urlBase}api/directions/65787cd49324c963057952d2`);
+    // const directionResponse = await fetch(`${urlBase}api/events/id`);
     // if (directionResponse.status !== 200) {
     //     return <h1>Direction not found</h1>;
     // }
@@ -57,7 +55,7 @@ function HomePage() {
 
       <section style={styles.featuredContent}>
         <h2 style={styles.title}>Encuentra tus eventos introduciento tu codigo postal</h2>
-        
+
             <div style={{height: "500px"}}>
                 <LazyMap center={[longitud, latitud]} zoom={15}>
                     <LazyMarker position={[longitud, latitud]}></LazyMarker>
