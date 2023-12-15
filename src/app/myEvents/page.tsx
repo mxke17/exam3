@@ -3,11 +3,7 @@
 import { getServerSession } from "next-auth";
 import { Col, Container, Row } from "react-bootstrap";
 
-export default async function newAuction() {
-
-    const session = await getServerSession();
-    // el email del oganirzador es: session ession?.user?.email
-    
+export default async function myEvents() {
 
     return <>
         <Container fluid="md">

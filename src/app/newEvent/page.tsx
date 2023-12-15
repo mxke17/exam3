@@ -3,7 +3,7 @@
 import { NewEvent } from "@/components/newEvent";
 import { Col, Container, Row } from "react-bootstrap";
 
-export default async function newAuction() {
+export default async function newEvent() {
 
     return <>
         <Container fluid="md">

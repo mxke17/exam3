@@ -45,7 +45,6 @@ function Navbar() {
         <div className="flex gap-x-2 items-center">
           <Link href="/newEvent">Nuevo evento</Link>
           <Link href="/myEvents">Mis eventos</Link>
-          <Link href="/inicio">Inicio</Link>
           <Link href="/logRegistrations">Registrations</Link>
           <p className="mr-2">
             {session.user.name}
