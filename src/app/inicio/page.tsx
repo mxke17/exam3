@@ -2,8 +2,13 @@ import React from "react";
 import LazyMap, {LazyMarker} from "@/components/Map.lazy";
 import { notFound } from "next/navigation";
 import { ImageForm } from "@/components/ImageForm";
+import { useSession } from "next-auth/react";
+import { getServerSession } from "next-auth";
 
 export default async function Inicio() {
+
+    //const session = await getServerSession();
+
     // const urlBase = process.env.NEXTAUTH_URL;
 
     // const directionResponse = await fetch(`${urlBase}api/directions/65787cd49324c963057952d2`);

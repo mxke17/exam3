@@ -28,17 +28,14 @@ function HomePage() {
   return (
     <div style={styles.homePage}>
       <section style={styles.welcomeSection}>
-        <h1 style={styles.title}>Bienvenidos a Mi Página Web</h1>
+        <h1 style={styles.title}>Bienvenidos a Eventual</h1>
         <p>
-          Explora nuestro sitio para descubrir contenido emocionante y útil.
+          Explora nuestro sitio para descubrir los mejores eventos.
         </p>
       </section>
 
       <section style={styles.featuredContent}>
-        <h2 style={styles.title}>Contenido Destacado</h2>
-        <p>
-          Descubre nuestras últimas novedades, eventos y características destacadas.
-        </p>
+        <h2 style={styles.title}>Encuentra tus eventos introduciento tu codigo postal</h2>
         {/* Puedes agregar más contenido destacado aquí */}
       </section>
     </div>

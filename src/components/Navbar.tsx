@@ -26,6 +26,7 @@ function Navbar() {
   useEffect(() => {
     if (session?.user) {
       const userData = {
+        timestamp: new Date(),
         caducidad: session.expires,
         email: session.user.email,
         // Otros datos relevantes para el inicio de sesión
@@ -37,15 +38,17 @@ function Navbar() {
   return (
     <nav className="bg-gray-500 flex items-center py-3 px-4 justify-between text-white">
       <Link href="/">
-        <h1 className="mr-auto cursor-pointer">appName</h1>
+        <h1 className="mr-auto cursor-pointer">Eventual</h1>
       </Link>
 
       {session?.user ? (
         <div className="flex gap-x-2 items-center">
+          <Link href="/newEvent">Nuevo evento</Link>
+          <Link href="/myEvents">Mis eventos</Link>
           <Link href="/inicio">Inicio</Link>
           <Link href="/logRegistrations">Registrations</Link>
           <p className="mr-2">
-            {session.user.name} {session.user.email}
+            {session.user.name}
           </p>
           <button
             onClick={async () => {

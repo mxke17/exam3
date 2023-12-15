@@ -24,13 +24,18 @@ if (uri === undefined) {
  * @param name Don't specify a name to get the Rastro database.
  * @returns
  */
-export async function GetDatabase(name = "example") {
+export async function GetDatabase(name = "Eventual") {
     return (await clientPromise).db(name);
 }
 
 export async function GetDirections() {
     const db = await GetDatabase();
     return db.collection("directions");
+}
+
+export async function GetEvents(){
+    const db = await GetDatabase();
+    return db.collection("events");
 }
 
 export async function GetRegistrations() {

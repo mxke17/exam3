@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 
 interface Registration {
   _id: string;
+  timestamp: string;
   email: string;
   caducidad: string;
 }
@@ -31,6 +32,7 @@ function Registrations() {
       <div className="grid gap-4">
         {registrations.map((registration) => (
           <div key={registration._id} className="p-4 border rounded-md">
+            <p>Timestamp: {registration.timestamp}</p>
             <p>Email: {registration.email}</p>
             <p>Caducidad: {registration.caducidad}</p>
           </div>
